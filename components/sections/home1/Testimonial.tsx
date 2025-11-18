@@ -1,70 +1,79 @@
 "use client";
-import React from "react";
-import Image from "next/image";
+import React, { useState } from "react";
 import { Autoplay, Navigation, Pagination } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 
-const testimonials = [
+// Define types for testimonial
+interface Testimonial {
+  name: string;
+  text: string;
+}
+
+// Define props interface
+interface TestimonialCardProps {
+  item: Testimonial;
+}
+
+const testimonials: Testimonial[] = [
   {
-    name: "Albert Flores",
-    designation: "Position, Company name",
-    rating: "4.8",
-    avatar: "/assets/images/resource/testimonial-1.png",
-    text: "I used this website template for my business and I'm thrilled with the results. The responsive design made it easy to navigate.",
+    name: "Urban Thread Boutique",
+    text: "Working with upstyle was like having an in-house expert. Their vision elevated our spring collection dramatically. We couldn't be happier with the fabrics and fit.",
   },
   {
-    name: "Cameron Williamson",
-    designation: "Position, Company name",
-    rating: "5.0",
-    avatar: "/assets/images/resource/testimonial-2.png",
-    text: "I used this website template for my business and I'm thrilled with the results. The responsive design made it easy to navigate.",
+    name: "Tech-Forward Consultants",
+    text: "They made our technical white papers readable! The NEEagle writing team is excellent at taking complex ideas and making them simple and compelling.",
   },
   {
-    name: "Jenny Wilson",
-    designation: "Position, Company name",
-    rating: "4.5",
-    avatar: "/assets/images/resource/testimonial-3.png",
-    text: "I used this website template for my business and I'm thrilled with the results. The responsive design made it easy to navigate.",
+    name: "Cedarwood",
+    text: "Our recent digital ad campaign with NEEagle was a huge success. They nailed the copy and visuals, leading to our best click-through rate ever.",
   },
   {
-    name: "Guy Hawkins",
-    designation: "Position, Company name",
-    rating: "4.9",
-    avatar: "/assets/images/resource/testimonial-4.png",
-    text: "I used this website template for my business and I'm thrilled with the results. The responsive design made it easy to navigate.",
+    name: "Rhinohills Real Estate",
+    text: "The business cards and brochures NEEagle designed are premium quality. We feel so much more confident handing them out. Attention to detail is amazing.",
   },
   {
-    name: "Albert Flores",
-    designation: "Position, Company name",
-    rating: "4.8",
-    avatar: "/assets/images/resource/testimonial-1.png",
-    text: "I used this website template for my business and I'm thrilled with the results. The responsive design made it easy to navigate.",
+    name: "G C Events",
+    text: "We needed a large, urgent print run for a trade show. NEEagle handled the design and printing flawlessly. The flyers looked incredible.",
   },
   {
-    name: "Cameron Williamson",
-    designation: "Position, Company name",
-    rating: "5.0",
-    avatar: "/assets/images/resource/testimonial-2.png",
-    text: "I used this website template for my business and I'm thrilled with the results. The responsive design made it easy to navigate.",
+    name: "CutInd",
+    text: "For our clothing ad, we needed models and specific designs. The collaboration between upstyle and the NEEagle shoot team was seamless. They provided the fashion design, content, and the final amazing ad. Nice team.",
   },
   {
-    name: "Jenny Wilson",
-    designation: "Position, Company name",
-    rating: "4.5",
-    avatar: "/assets/images/resource/testimonial-3.png",
-    text: "I used this website template for my business and I'm thrilled with the results. The responsive design made it easy to navigate.",
-  },
-  {
-    name: "Guy Hawkins",
-    designation: "Position, Company name",
-    rating: "4.9",
-    avatar: "/assets/images/resource/testimonial-4.png",
-    text: "I used this website template for my business and I'm thrilled with the results. The responsive design made it easy to navigate.",
+    name: "Guardian Homes",
+    text: "No outsourcing headache! NEEagle managed the location shoot, the graphics, and the final edit. It was a smooth, professional production from start to finish. They deliver what they promise.",
   },
 ];
+
+const TestimonialCard: React.FC<TestimonialCardProps> = ({ item }) => {
+  const [isExpanded, setIsExpanded] = useState(false);
+
+  return (
+    <div className="testimonial-block-one">
+      <div className="inner-box">
+        <div className="testimonial-content">
+          <div className="text">
+            <p className={isExpanded ? "expanded" : "truncated"}>{item.text}</p>
+            {item.text.length > 150 && (
+              <button
+                onClick={() => setIsExpanded(!isExpanded)}
+                className="read-more-btn"
+              >
+                {isExpanded ? "Read Less" : "Read More"}
+              </button>
+            )}
+          </div>
+          <div className="author-info">
+            <h5>– {item.name}</h5>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+};
 
 const swiperOptions = {
   modules: [Autoplay, Pagination, Navigation],
@@ -96,8 +105,12 @@ export default function Testimonial() {
     <section className="testimonial-section pt_200 pb_100">
       <div className="auto-container">
         <div className="sec-title reveal-me">
-          <div className="sub-title"><span>Testimonials</span></div>
-          <h2><span>What startups say about us</span></h2>
+          <div className="sub-title">
+            <span>Testimonials</span>
+          </div>
+          <h2>
+            <span>What startups say about us</span>
+          </h2>
         </div>
       </div>
 
@@ -105,41 +118,18 @@ export default function Testimonial() {
         <Swiper {...swiperOptions} className="testimonial-swiper">
           {testimonials.map((item, index) => (
             <SwiperSlide key={index}>
-              <div className="testimonial-block-one">
-                <div className="inner-box">
-                  <div className="static-content">
-                    <div className="text"><p>{item.text}</p></div>
-                    <div className="author-box">
-                      <figure className="thumb-box">
-                        <Image src={item.avatar} alt={item.name} width={48} height={48} priority />
-                      </figure>
-                      <div className="author-info">
-                        <h5>{item.name}</h5>
-                        <span className="designation">{item.designation}</span>
-                      </div>
-                    </div>
-                  </div>
-                  <div className="overlay-content">
-                    <h2>{item.rating}</h2>
-                    <span>Client Review</span>
-                    <ul className="image-list">
-                      {[1,2,3,4].map((n) => (
-                        <li key={n}>
-                          <Image src={`/assets/images/resource/clients-${n}.png`} alt="Client" width={39} height={39} priority />
-                        </li>
-                      ))}
-                    </ul>
-                    <p>30k+ Our Trust clients Overall with better experience</p>
-                  </div>
-                </div>
-              </div>
+              <TestimonialCard item={item} />
             </SwiperSlide>
           ))}
 
           {/* Navigation & Pagination */}
           <div className="nav-style-one z_5">
-            <button className="swiper-button-prev"><span className="icon-7"></span></button>
-            <button className="swiper-button-next"><span className="icon-8"></span></button>
+            <button className="swiper-button-prev">
+              <span className="icon-7"></span>
+            </button>
+            <button className="swiper-button-next">
+              <span className="icon-8"></span>
+            </button>
           </div>
           <div className="swiper-pagination"></div>
         </Swiper>
