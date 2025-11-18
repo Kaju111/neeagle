@@ -1,0 +1,29 @@
+
+.clients-list{
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    width: max-content;
+}
+
+.clients-list li{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 432px;
+    height: 140px;
+    min-width: 432px;
+    text-align: center;
+    border: 1px solid rgba(110, 110, 110, 0.30);
+}
+
+.clients-list li:last-child{
+    margin-right: 20px;
+}
+
+.clients-list li img{
+    filter: grayscale(100%);
+    transition: all 500ms ease;
+}

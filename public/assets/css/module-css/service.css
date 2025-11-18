@@ -1,0 +1,478 @@
+
+
+.service-section {
+  position: relative;
+  padding-bottom: 300px;
+}
+
+.service-section .tabs-content {
+  position: relative;
+}
+
+.service-section .tabs-box .tab {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: auto;
+  left: 10px;
+  transition: all 400ms linear;
+}
+
+.service-section .tabs-box .tab.active-tab {
+  left: 0px;
+}
+
+.service-section .content-box {
+  position: relative;
+  display: block;
+}
+
+.service-section .content-box{
+    position: relative;
+    display: block;
+}
+
+.service-section .content-box .service-list {
+  max-height: 525px;
+  overflow-y: auto;  
+  padding-right: 10px; 
+}
+
+.service-section .content-box .service-list::-webkit-scrollbar {
+  width: 4px;
+}
+
+.service-section .content-box .service-list::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.service-section .content-box .service-list::-webkit-scrollbar-thumb {
+  background: rgba(110, 110, 110, 0.3);
+  border-radius: 4px;
+}
+
+
+.service-section .content-box .service-list li {
+  position: relative;
+  display: block;
+  font-size: 32px;          
+  line-height: 40px;      
+  color: var(--text-color);
+  opacity: 0.4;
+  cursor: pointer;
+  margin-bottom: 8px;       
+  transition: all 500ms linear;
+}
+
+.service-section .content-box .service-list li.active-btn {
+  color: var(--title-color);
+  opacity: 1;
+}
+.service-section .video-box {
+  position: relative;
+  display: block;
+}
+
+.service-section .video-box a {
+  position: relative;
+  display: block;
+  overflow: hidden;
+  border-radius: 12px;
+}
+
+.service-section .video-box .service-video {
+  position: relative;
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+  object-fit: cover;
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 500ms;
+  z-index: 9;
+}
+
+.service-section .video-box:hover .service-video {
+  transform: scale(1.05);
+}
+
+.service-style-two .service-list li {
+  position: relative;
+  display: block;
+}
+
+.service-style-two .service-list li {
+  position: relative;
+  display: block;
+}
+
+.service-section .image-box{
+    position: relative;
+    display: block;
+}
+
+.service-section .image-box .image{
+    position: relative;
+    display: block;
+    overflow: hidden;
+    border-radius: 12px;
+}
+
+.service-section .image-box .image img{
+    position: relative;
+    width: 100%;
+    border-radius: 12px;
+    transition-property: all;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 500ms;
+    z-index: 9;
+}
+
+.service-section .image-box .image:hover img{
+    transform: rotate(3deg) scaleX(1.25) scaleY(1.25);
+}
+
+
+.service-style-two .service-list li{
+    position: relative;
+    display: block;
+}
+
+.service-style-two .service-list li a{
+    position: relative;
+    display: block;
+    font-size: 64px;
+    line-height: 76px;
+    font-weight: 500;
+    color: var(--text-color);
+    padding: 44px 0px;
+    border-bottom: 1px solid rgb(110, 110, 110, 0.3);
+}
+
+.service-style-two .service-list li a:hover,
+.service-style-two .service-list li.active a{
+    color: var(--title-color);
+}
+
+.service-style-two .service-list li:first-child a{
+    border-top: 1px solid rgb(110, 110, 110, 0.3);
+}
+
+.service-style-two .service-list li a .image{
+    position: absolute;
+    top: -40px;
+    right: 50px;
+    border-radius: 12px;
+    transform: rotate(-15deg) scale(0,0);
+    will-change: transform;
+    transition: transform 400ms linear;
+}
+
+.service-style-two .service-list li a:hover .image,
+.service-style-two .service-list li.active a .image{
+    transform: rotate(-15deg) scale(1,1);
+}
+
+.service-style-two .service-list li a .image img{
+    width: 100%;
+    border-radius: 12px;
+    min-width: 301px;
+}
+
+
+.service-block-one .inner-box{
+    position: relative;
+    display: block;
+    background-color: #E3EFC5;
+    border-radius: 12px;
+    padding: 30px;
+    margin-bottom: 30px;
+    transition-property: all;
+    transition-duration: 300ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.service-block:nth-child(2) .service-block-one .inner-box{
+    background-color: #FFF0D7;
+}
+
+.service-block:nth-child(3) .service-block-one .inner-box{
+    background-color: #EEEBFF;
+}
+
+.service-block-one .inner-box:hover{
+    background-color: var(--theme-color) !important;
+}
+
+.service-block-one .inner-box .count-text{
+    position: relative;
+    display: inline-block;
+    font-size: 16px;
+    line-height: 24px;
+    color: var(--title-color);
+    margin-bottom: 40px;
+}
+
+.service-block-one .inner-box  h2{
+    position: relative;
+    display: block;
+    font-size: 56px;
+    line-height: 67px;
+    margin-bottom: 20px;
+}
+
+.service-block-one .inner-box  h2 a{
+    display: inline-block;
+    color: var(--title-color);
+}
+
+.service-block-one .inner-box  h2 a span{
+    position: relative;
+    display: inline-block;
+}
+
+.service-block-one .inner-box  h2 a span::before{
+    position: absolute;
+    content: '';
+    background-color: var(--secondary-color);
+    width: 0%;
+    height: 1px;
+    left: 0px;
+    bottom: 0px;
+    transition: all 500ms ease;
+}
+
+.service-block-one .inner-box  h2 a:hover span::before{
+    width: 100%;
+}
+
+.service-block-one .inner-box p{
+    color: var(--text-color) !important;
+    margin-bottom: 30px;
+}
+
+.service-block-one .inner-box .btn-box{
+    position: relative;
+    display: flex;
+}
+
+.service-style-three .theme-btn.border-btn:hover .overlay-text{
+    background-color: var(--secondary-color);
+}
+
+
+.service-style-four .title-box{
+    position: relative;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.service-style-four .title-box .sec-title{
+    margin-bottom: 0px;
+}
+
+.service-block-two{
+    position: relative;
+    display: block;
+    padding: 60px 100px;
+    background-color: var(--secondary-color);
+    border-bottom: 1px solid rgb(110, 110, 110, 1);
+    transition-property: all;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 500ms;
+}
+
+.service-block-two:before{
+    position: absolute;
+    content: '';
+    background-color: var(--theme-color);
+    width: 100%;
+    height: 0%;
+    left: 0px;
+    bottom: 0px;
+    transition: all 400ms linear;
+}
+
+.service-block-two.active::before{
+    height: 100%;
+    top: 0px;
+}
+
+.service-block-two .inner-box{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.service-block-two .inner-box p{
+    max-width: 960px;
+    transition: all 500ms ease;
+}
+
+.service-block-two .inner-box .count-text{
+    position: relative;
+    display: block;
+    font-size: 96px;
+    line-height: 115px;
+    color: #fff;
+    font-weight: 500;
+    transition: all 500ms ease;
+}
+
+.service-block-two.active .inner-box .count-text{
+    color: var(--title-color);
+}
+
+.service-block-two .inner-box h2{
+    position: relative;
+    display: inline-block;
+    font-size: 48px;
+    line-height: 62px;
+    font-weight: 500;
+    color: transparent;
+    -webkit-background-clip: text !important;
+    -webkit-text-fill-color: transparent;
+    background: linear-gradient(98.77deg, #FFFFFF 41.04%, #6E6E6E 73.86%);
+    transition: all 500ms ease;
+}
+
+.service-block-two.active .inner-box h2{
+    background: linear-gradient(98.77deg, #232323 41.04%, #6E6E6E 73.86%);
+}
+
+.service-block-two .inner-box .link-box{
+    min-width: 116px;
+}
+
+.service-block-two .inner-box .link-box a{
+    position: relative;
+    display: inline-block;
+    width: 116px;
+    height: 116px;
+    line-height: 116px;
+    background-color: var(--secondary-color);
+    font-size: 36px;
+    color: #fff;
+    border-radius: 50%;
+    text-align: center;
+    transform: scale(0,0);
+    transition-property: all;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 500ms;
+}
+
+.service-block-two.active .inner-box .link-box a{
+    transform: scale(1,1);
+}
+
+.service-block-three{
+    position: relative;
+    display: block;
+}
+
+.service-block-three .image{
+    position: relative;
+    display: block;
+    overflow: hidden;
+}
+
+.service-block-three .image img{
+    width: 100%;
+    transition-property: all;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 500ms;
+}
+
+.service-block-three:hover .image img{
+    transform: rotate(3deg) scaleX(1.25) scaleY(1.25);
+}
+
+.service-block-three .content-box{
+    position: relative;
+    display: block;
+}
+
+.service-block-three .content-box .count-text{
+    position: relative;
+    display: block;
+    font-size: 40px;
+    line-height: 60px;
+    color: var(--title-color);
+    margin-bottom: 40px;
+}
+
+.service-block-three .content-box h2{
+    position: relative;
+    display: block;
+    font-size: 56px;
+    line-height: 67px;
+    margin-bottom: 16px;
+}
+
+.service-block-three .content-box h2 a{
+    position: relative;
+    display: inline-block;
+    color: var(--title-color);
+}
+
+.service-block-three .content-box h2 a span{
+    position: relative;
+    display: inline-block;
+}
+
+.service-block-three .content-box h2 a span::before{
+    position: absolute;
+    content: '';
+    background-color: var(--secondary-color);
+    width: 0%;
+    height: 1px;
+    left: 0px;
+    bottom: 0px;
+    transition-duration: 400ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.service-block-three .content-box h2 a:hover span::before{
+    width: 100%;
+}
+
+.service-block-three .content-box p{
+    margin-bottom: 40px;
+}
+
+.service-block-three .content-box .btn-box{
+    position: relative;
+    display: flex;
+}
+
+.service-style-five .owl-dots{
+    position: relative;
+    display: block;
+    text-align: center;
+    margin-top: 18px;
+}
+
+.service-style-five .owl-dots .swiper-pagination-bullet{
+    position: relative;
+    display: inline-block;
+    width: 30px;
+    height: 8px;
+    background-color: #D9D9D9;
+    border-radius: 4px;
+    cursor: pointer;
+    margin: 0px 4px;
+    cursor: pointer;
+    transition-duration: 400ms;
+    opacity: 1;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.service-style-five .owl-dots .swiper-pagination-bullet-active,
+.service-style-five .owl-dots .swiper-pagination-bullet:hover{
+    background-color: var(--theme-color);
+    width: 100px;
+}

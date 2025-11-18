@@ -1,0 +1,70 @@
+
+
+.feature-block-one{
+    position: relative;
+    display: block;
+}
+
+.feature-block-one .content-box{
+    position: relative;
+    display: block;
+    margin-top: -12px;
+}
+
+.feature-block-one .content-box h2{
+    position: relative;
+    display: block;
+    font-size: 72px;
+    line-height: 92px;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+.feature-block-one .content-box h2 span{
+    position: relative;
+    display: inline-block;
+    color: transparent;
+    -webkit-background-clip: text !important;
+    -webkit-text-fill-color: transparent;
+    background: linear-gradient(98.77deg, #232323 41.04%, #6E6E6E 73.86%);
+}
+
+.feature-block-one .content-box p{
+    margin-bottom: 30px;
+}
+
+.feature-block-one .content-box .list-item li{
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 13px;
+    font-size: 20px;
+    line-height: 30px;
+    margin-bottom: 15px;
+}
+
+.feature-block-one .content-box .list-item li:last-child{
+    margin-bottom: 0px;
+}
+
+.feature-block-one .content-box .btn-box{
+    position: relative;
+    display: flex;
+}
+
+.feature-block-one .image-box .image{
+    position: relative;
+    display: block;
+    overflow: hidden;
+}
+
+.feature-block-one .image-box .image img{
+    width: 100%;
+    transition-property: all;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 500ms;
+}
+
+.feature-block-one:hover .image-box .image img{
+    transform: rotate(0deg) scaleX(1.25) scaleY(1.25);
+}

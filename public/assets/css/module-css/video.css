@@ -1,0 +1,29 @@
+
+.video-section{
+    position: relative;
+    display: block;
+}
+
+.video-section .outer-container{
+    position: relative;
+    display: flex;
+    width: 100%;
+    height: fit-content;
+    transform-origin: center;
+    transform: scaleX(0.5) scaleY(0.5);
+}
+
+.video-section .outer-container video{
+    width: 100% !important;
+    height: 100% !important;
+}
+
+.video-section .inner-box{
+    position: relative;
+    display: flex;
+    width: fit-content;
+    overflow: hidden;
+    border-radius: 10px;
+    height: 800px;
+    margin: 0 auto;
+}

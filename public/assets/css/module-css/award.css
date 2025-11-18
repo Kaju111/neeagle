@@ -1,0 +1,100 @@
+
+.award-section .inner-container{
+    position: relative;
+    display: block;
+    border: 1px solid rgb(110, 110, 110, 0.3);
+    border-radius: 12px;
+}
+
+.single-award-block{
+    position: relative;
+    display: block;
+    padding: 30px 30px 0px 60px;
+    border-top: 1px solid rgb(110, 110, 110, 0.3);
+    border-radius: 12px 12px 0px 0px;
+}
+
+.single-award-block:first-child{
+    border-top: none;
+}
+
+.single-award-block .image-box{
+    position: relative;
+    display: block;
+    overflow: hidden;
+    border-top-left-radius: 12px;
+    margin-right: 22px;
+}
+
+.single-award-block:last-child .image-box{
+    border-bottom-left-radius: 12px;
+}
+
+.single-award-block .image-box img{
+    width: 100%;
+    transition-property: all;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 500ms;
+}
+
+.single-award-block:hover .image-box img{
+    transform: rotate(3deg) scaleX(1.25) scaleY(1.25);
+}
+
+.single-award-block .content-box{
+    position: relative;
+    display: block;
+    padding-bottom: 38px;
+    padding-right: 5px;
+}
+
+.single-award-block .content-box .award-image{
+    position: relative;
+    display: inline-block;
+    min-height: 40px;
+    margin-bottom: 60px;
+}
+
+.single-award-block .content-box .award-image-overlay{
+    position: relative;
+    display: inline-block;
+    min-height: 40px;
+    margin-bottom: 60px;
+    display: none;
+}
+
+.single-award-block .content-box .feature-list li{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 0px;
+    border-bottom: 1px solid #D9D9D9;
+    font-size: 20px;
+    line-height: 30px;
+    color: var(--text-color);
+}
+
+.single-award-block .content-box .links-list{
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.single-award-block .content-box .links-list li a{
+    position: relative;
+    display: inline-block;
+    font-size: 16px;
+    line-height: 24px;
+    color: var(--title-color);
+    border: 1px solid rgb(110, 110, 110, 0.3);
+    border-radius: 12px;
+    padding: 9px 20px;
+}
+
+.single-award-block .content-box .links-list li a:hover{
+    color: #fff;
+    background-color: var(--theme-color);
+    border-color: var(--theme-color);
+}

@@ -1,0 +1,211 @@
+
+.blog-sidebar{
+    position: sticky;
+    display: block;
+}
+
+.blog-sidebar .widget-title h3{
+    font-size: 24px;
+    line-height: 29px;
+}
+
+.blog-sidebar .search-widget .form-group{
+    position: relative;
+    margin-bottom: 0px;
+}
+
+.blog-sidebar .search-widget .form-group input[type='search']{
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 62px;
+    border: 1px solid rgb(110, 110, 110, 0.30);
+    border-radius: 12px;
+    font-size: 18px;
+    color: rgb(110, 110, 110, 0.70);
+    padding: 10px 20px;
+    transition: all 500ms ease;
+}
+
+.blog-sidebar .search-widget .form-group button[type='submit']{
+    position: absolute;
+    top: 21px;
+    right: 20px;
+    font-size: 20px;
+    line-height: 20px;
+    color: var(--text-color);
+    transition: all 500ms ease;
+}
+
+.blog-sidebar .search-widget .form-group input:focus + button,
+.blog-sidebar .search-widget .form-group button:hover{
+    color: var(--theme-color);
+}
+
+.blog-sidebar .search-widget .form-group input:focus{
+    border-color: var(--theme-color);
+}
+
+.blog-sidebar .category-widget .category-list li{
+    position: relative;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.blog-sidebar .category-widget .category-list li:last-child{
+    margin-bottom: 0px;
+}
+
+.blog-sidebar .category-widget .category-list li a{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 18px;
+    line-height: 22px;
+    color: var(--text-color);
+    border-radius: 8px;
+    border: 1px solid rgb(110, 110, 110, 0.30);
+    padding: 19px 20px;
+}
+
+.blog-sidebar .category-widget .category-list li a i{
+    position: relative;
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    line-height: 24px;
+    text-align: center;
+    font-size: 8px;
+    color: var(--title-color);
+    border: 1px solid var(--secondary-color);
+    border-radius: 50%;
+    opacity: 0;
+    transition: all 500ms ease;
+}
+
+.blog-sidebar .category-widget .category-list li a:hover i{
+    opacity: 1;
+}
+
+.blog-sidebar .category-widget .category-list li a:hover{
+    color: var(--title-color);
+    background-color: var(--theme-color);
+    border-color: var(--theme-color);
+}
+
+.blog-sidebar .post-widget .post{
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 20px;
+}
+
+.blog-sidebar .post-widget .post:last-child{
+    margin-bottom: 0px;
+}
+
+.blog-sidebar .post-widget .post .image{
+    position: relative;
+    display: block;
+    width: 90px;
+    height: 90px;
+    min-width: 90px;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.blog-sidebar .post-widget .post .image img{
+    width: 100%;
+    border-radius: 8px;
+    transition: all 500ms ease;
+}
+
+.blog-sidebar .post-widget .post:hover .image img{
+    transform: scale(1.5);
+}
+
+.blog-sidebar .post-widget .post h4{
+    font-size: 20px;
+    line-height: 24px;
+    font-weight: 600;
+    margin-bottom: 17px;
+}
+
+.blog-sidebar .post-widget .post h4 a{
+    display: inline-block;
+    color: var(--title-color);
+}
+
+.blog-sidebar .post-widget .post h4 a:hover{
+    color: var(--theme-color);
+}
+
+.blog-sidebar .post-widget .post .post-date{
+    font-size: 14px;
+    line-height: 21px;
+}
+
+.blog-sidebar .tags-widget .tags-list li{
+    position: relative;
+    float: left;
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+
+.blog-sidebar .tags-widget .tags-list li a{
+    position: relative;
+    display: inline-block;
+    font-size: 14px;
+    line-height: 21px;
+    font-weight: 600;
+    color: var(--text-color);
+    padding: 12px 20px;
+    border-radius: 12px;
+    background: linear-gradient(180deg, #2323230f 0%, #23232302 100%);
+    box-shadow: -1px -1px 0px 0px rgba(35, 35, 35, 0.2);
+}
+
+.blog-sidebar .tags-widget .tags-list li a:hover{
+    color: var(--theme-color);
+}
+
+.blog-details-content .image{
+    position: relative;
+    display: block;
+    border-radius: 12px;
+}
+
+.blog-details-content .image img{
+    width: 100%;
+    border-radius: 12px;
+}
+
+.blog-details-content h3{
+    font-size: 32px;
+    line-height: 38px;
+}
+
+.blog-details-content .list-item li{
+    position: relative;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.blog-details-content .list-item li:last-child{
+    margin-bottom: 0px;
+}
+
+.blog-details-content blockquote{
+    position: relative;
+    display: block;
+    background-color: var(--secondary-color);
+    border-radius: 12px;
+    font-size: 20px;
+    line-height: 24px;
+    font-weight: 500;
+    padding: 30px;
+    color: #fff;
+    text-align: center;
+}

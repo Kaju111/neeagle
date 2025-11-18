@@ -1,0 +1,36 @@
+
+.page-title{
+    padding-top: 300px;
+}
+
+.page-title .content-box{
+    margin: 0px -22px;
+}
+
+.page-title .content-box h2{
+    font-size: 128px;
+    line-height: 154px;
+    margin-bottom: 60px;
+}
+
+.page-title .content-box h1{
+    display: block;
+    font-size: 256px;
+    line-height: 320px;
+}
+
+.page-title .content-box h1 span{
+    position: relative;
+    display: inline-block;
+    color: transparent;
+    -webkit-background-clip: text !important;
+    -webkit-text-fill-color: transparent;
+    background: linear-gradient(98.77deg, #232323 41.04%, #6E6E6E 73.86%);
+}
+
+.page-title h3{
+    font-size: 70px;
+    line-height: 84px;
+    font-weight: 600;
+    margin-bottom: 60px;
+}

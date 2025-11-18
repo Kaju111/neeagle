@@ -1,0 +1,133 @@
+
+
+.team-details .image-box{
+    position: relative;
+    display: block;
+}
+
+.team-details .image-box .image{
+    position: relative;
+    display: block;
+    margin-bottom: 32px;
+    border: 1px solid rgb(110, 110, 110, 0.30);
+    border-radius: 12px;
+}
+
+.team-details .image-box .image img{
+    width: 100%;
+    border-radius: 12px;
+}
+
+.team-details .image-box h3{
+    font-size: 24px;
+    line-height: 30px;
+    font-weight: 600;
+    margin-bottom: 4px;
+}
+
+.team-details .image-box .designation{
+    position: relative;
+    display: block;
+    font-size: 14px;
+    line-height: 21px;
+    margin-bottom: 16px;
+}
+
+.team-details .image-box a{
+    position: relative;
+    display: inline-block;
+    font-size: 16px;
+    line-height: 24px;
+    color: var(--text-color);
+    margin-bottom: 24px;
+}
+
+.team-details .image-box a:hover{
+    color: var(--theme-color);
+}
+
+.team-details .image-box .social-links{
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.team-details .image-box .social-links li a{
+    font-size: 18px;
+    color: var(--title-color);
+}
+
+.team-details .image-box .social-links li a:hover{
+    color: var(--theme-color);
+}
+
+.team-details .content-box{
+    position: relative;
+    display: block;
+}
+
+.team-details .content-box h2{
+    font-size: 40px;
+    line-height: 48px;
+    font-weight: 600;
+}
+
+.team-details .content-box .info-list li{
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 24px;
+    line-height: 29px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.team-details .content-box .info-list li:last-child{
+    margin-bottom: 0px;
+}
+
+.team-details .content-box .info-list li a{
+    display: inline-block;
+    color: var(--title-color);
+}
+
+.team-details .content-box .info-list li a:hover{
+    color: var(--theme-color);
+}
+
+.team-details .content-box .form-inner .form-group{
+    position: relative;
+    margin-bottom: 30px;
+}
+
+.team-details .content-box .form-inner .form-group:last-child{
+    margin-bottom: 0px;
+}
+
+.team-details .content-box .form-inner .form-group input[type='text'],
+.team-details .content-box .form-inner .form-group input[type='email'],
+.team-details .content-box .form-inner .form-group textarea{
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 62px;
+    border: 1px solid rgb(110, 110, 110, 0.30);
+    border-radius: 12px;
+    font-size: 18px;
+    color: rgb(110, 110, 110, 0.70);
+    padding: 10px 20px;
+    transition: all 500ms ease;
+}
+
+.team-details .content-box .form-inner .form-group textarea{
+    padding-top: 18px;
+    resize: none;
+    height: 162px;
+}
+
+.team-details .content-box .form-inner .form-group input:focus,
+.team-details .content-box .form-inner .form-group textarea:focus{
+    border-color: var(--theme-color);
+}

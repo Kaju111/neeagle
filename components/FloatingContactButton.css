@@ -1,0 +1,134 @@
+.floating-contact-wrapper {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  z-index: 9999;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+}
+
+.main-fab-btn {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background: #70C11B;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+  transition: all 0.3s ease;
+  color: white;
+  font-size: 32px;
+  font-weight: 300;
+}
+
+.main-fab-btn:hover {
+  transform: scale(1.1);
+  box-shadow: 0 6px 25px rgba(0, 0, 0, 0.4);
+}
+
+.main-fab-btn .icon-plus {
+  transition: transform 0.3s ease;
+  display: inline-block;
+}
+
+.main-fab-btn .icon-plus.rotate {
+  transform: rotate(45deg);
+}
+
+/* Action Buttons */
+.action-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(20px);
+  transition: all 0.3s ease;
+}
+
+.action-buttons.open {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+
+.action-btn {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  color: white;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease;
+  animation: slideIn 0.3s ease forwards;
+}
+
+.action-btn:hover {
+  transform: scale(1.15);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+}
+
+/* WhatsApp */
+.whatsapp-btn {
+  background: #25d366;
+}
+
+.whatsapp-btn:hover {
+  background: #128c7e;
+}
+
+/* Call */
+.call-btn {
+  background: #4285f4;
+}
+
+.call-btn:hover {
+  background: #1a73e8;
+}
+
+/* Email */
+.email-btn {
+  background: #ea4335;
+}
+
+.email-btn:hover {
+  background: #c5221f;
+}
+
+/* Animation */
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .floating-contact-wrapper {
+    bottom: 20px;
+    right: 20px;
+  }
+
+  .main-fab-btn {
+    width: 55px;
+    height: 55px;
+  }
+
+  .action-btn {
+    width: 45px;
+    height: 45px;
+  }
+}

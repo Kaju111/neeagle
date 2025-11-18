@@ -1,0 +1,281 @@
+
+.news-section .title-inner{
+    position: relative;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+}
+
+.news-section .title-inner .sec-title{
+    margin-bottom: 0px;
+}
+
+.news-block-one .inner-box{
+    position: relative;
+    display: block;
+    margin-bottom: 30px;
+}
+
+.news-block-one .inner-box .image-box{
+    position: relative;
+    display: block;
+    overflow: hidden;
+    border-radius: 12px;
+}
+
+.news-block-one .inner-box .image-box img{
+    width: 100%;
+    border-radius: 12px;
+    transition-property: all;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 500ms;
+}
+
+.news-block-one .inner-box:hover .image-box img{
+    transform: rotate(3deg) scaleX(1.25) scaleY(1.25);
+}
+
+.news-block-one .inner-box .lower-content{
+    position: relative;
+    display: block;
+    padding-top: 24px;
+}
+
+.news-block-one .inner-box .lower-content .post-info{
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 16px;
+}
+
+.news-block-one .inner-box .lower-content .post-info li{
+    font-size: 14px;
+    line-height: 21px;
+}
+
+.news-block-one .inner-box .lower-content .post-info li .sub-title{
+    font-size: 14px;
+    font-weight: 600;
+    padding: 4px 10px;
+    text-transform: capitalize;
+    color: var(--text-color);
+    margin-bottom: 0px;
+    border-radius: 8px;
+}
+
+.news-block-one .inner-box .lower-content h3{
+    position: relative;
+    display: block;
+    font-size: 24px;
+    line-height: 29px;
+    font-weight: 500;
+    margin-bottom: 8px;
+}
+
+.news-block-one .inner-box .lower-content h3 a{
+    position: relative;
+    display: inline-block;
+    color: var(--title-color);
+}
+
+.news-block-one .inner-box .lower-content h3 a span{
+    position: relative;
+    display: inline-block;
+}
+
+.news-block-one .inner-box .lower-content h3 a span::before{
+    position: absolute;
+    content: '';
+    background-color: var(--secondary-color);
+    width: 0%;
+    height: 1px;
+    left: 0px;
+    bottom: 0px;
+    transition-duration: 400ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.news-block-one .inner-box .lower-content h3 a:hover span::before{
+    width: 100%;
+}
+
+.news-block-one .inner-box .lower-content p{
+    margin-bottom: 24px;
+}
+
+
+.news-section.alternat-2 .inner-container{
+    display: flex;
+    overflow: hidden;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 30px;
+}
+
+.news-section.alternat-2 .inner-container .news-block-one{
+    width: 263px;
+    min-height: 430px;
+    transition-property: width;
+    transition-duration: 700ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.news-section.alternat-2 .inner-container .news-block-one.active{
+    width: 410px;
+}
+
+.news-section.alternat-2 .inner-container .news-block-one h3 a:hover{
+    color: var(--theme-color);
+}
+
+.news-section.alternat-2 .inner-container .news-block-one .inner-box .image-box img{
+    min-height: 300px;
+}
+
+.news-block-two .inner-box{
+    position: relative;
+    display: block;
+    margin-bottom: 30px;
+}
+
+.news-block-two .inner-box .image-box{
+    position: relative;
+    display: block;
+    overflow: hidden;
+}
+
+.news-block-two .inner-box .image-box .image{
+    position: relative;
+    display: block;
+    overflow: hidden;
+    border-radius: 12px;
+}
+
+.news-block-two .inner-box .image-box .image img{
+    width: 100%;
+    border-radius: 12px;
+    transition-duration: 400ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.news-block-two .inner-box:hover .image-box .image img{
+    transform: scale(1.2);
+}
+
+.news-block-two .inner-box .image-box .link{
+    position: absolute;
+    top: 16px;
+    right: 16px;
+}
+
+.news-block-two .inner-box .image-box .link a{
+    position: relative;
+    display: inline-block;
+    width: 64px;
+    height: 64px;
+    line-height: 64px;
+    font-size: 24px;
+    color: #fff;
+    border: 1px solid #fff;
+    text-align: center;
+    border-radius: 50%;
+}
+
+.news-block-two .inner-box .image-box .link a:hover{
+    color: var(--title-color);
+    border-color: var(--theme-color);
+    background-color: var(--theme-color);
+}
+
+.news-block-two .inner-box .lower-content{
+    position: relative;
+    padding-top: 12px;
+}
+
+.news-block-two .inner-box .lower-content .post-info{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.news-block-two .inner-box .lower-content .post-info span{
+    font-size: 18px;
+    line-height: 29px;
+}
+
+.news-block-two .inner-box .lower-content h3{
+    font-size: 24px;
+    line-height: 38px;
+}
+
+.news-block-two .inner-box .lower-content h3 a{
+    display: inline-block;
+    color: var(--title-color);
+}
+
+.news-block-two .inner-box .lower-content h3 a:hover{
+    color: var(--theme-color);
+}
+
+.news-section .owl-nav{
+    position: absolute;
+    top: -97px;
+    right: 0px;
+}
+
+.news-section .owl-nav .owl-prev{
+    margin-right: 14px;
+}
+
+.news-section .owl-dots{
+  position: absolute;
+  top: -98px !important;
+  right: 125px;
+  left: inherit !important;
+  bottom: inherit !important;
+  width: 55px !important;
+  min-height: 38px;
+  counter-reset: slides-num;
+}
+
+.news-section .owl-dots::after {
+  position: absolute;
+  right: 0px;
+  top: 0px;
+  content: "0" counter(slides-num);
+  display: inline-block;
+  font-size: 24px;
+  line-height: 38px;
+  color: var(--text-color);
+}
+
+.news-section .owl-dots:before{
+  position: absolute;
+  content: '';
+  right: 35px;
+  top: 10px;
+  width: 2px;
+  height: 18px;
+  background: var(--secondary-color);
+  opacity: 0.5;
+  transform: rotate(10deg);
+}
+
+.news-section .owl-dots .swiper-pagination-bullet{
+  position: absolute;
+  top: 0px;
+  left: -20px;
+  counter-increment: slides-num;
+  font-size: 24px;
+  line-height: 38px;
+  color: var(--title-color);
+  background-color: transparent;
+}
+
+.news-section .owl-dots .swiper-pagination-bullet-active:before{
+  position: absolute;
+  content: "0" counter(slides-num);
+}

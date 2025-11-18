@@ -1,0 +1,99 @@
+
+.approach-section .content-box{
+    position: relative;
+    display: block;
+}
+
+.approach-section .content-box .list-item li{
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 13px;
+    font-size: 20px;
+    line-height: 30px;
+    margin-bottom: 20px;
+}
+
+.approach-section .content-box .list-item li:last-child{
+    margin-bottom: 0px;
+}
+
+.approach-section .content-box .list-item li:last-child{
+    margin-bottom: 0px;
+}
+
+.approach-section .content-box .list-item li i{
+    position: relative;
+    display: inline-block;
+    width: 19px;
+    height: 19px;
+    line-height: 19px;
+    border: 1px solid rgba(110, 110, 110, 0.30);
+    border-radius: 6px;
+    color: var(--title-color);
+    text-align: center;
+    font-size: 10px;
+}
+
+.approach-section .image-box .image{
+    position: relative;
+    display: block;
+    border-radius: 12px;
+}
+
+.approach-section .image-box .image img{
+    width: 100%;
+    border-radius: 12px;
+}
+
+.approach-section .content-box .partner-inner{
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    width: max-content;
+}
+
+.approach-section .content-box .partner-box{
+    position: relative;
+    margin-left: -500px;
+}
+
+.approach-section .content-box .partner-box .shadow-box{
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    width: 100px;
+    height: 100%;
+    z-index: 10;
+    background: -webkit-linear-gradient(180deg, rgba(255,255,255,1) 25%, rgba(255,255,255,0.0) 100%);
+}
+
+.approach-section .content-box .partner-box .partner-logo{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 220px;
+    height: 84px;
+    border-radius: 12px;
+    border: 1px solid rgba(110, 110, 110, 0.30);
+}
+
+.approach-section .content-box .partner-box .partner-logo:last-child{
+    margin-right: 8px;
+}
+
+.approach-section .content-box .partner-box .partner-logo a{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+}
+
+.approach-section .marquee-container{
+    overflow: hidden;
+}

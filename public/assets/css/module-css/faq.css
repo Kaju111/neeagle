@@ -1,0 +1,92 @@
+
+.faq-section .sec-title h2{
+    margin-bottom: 32px;
+}
+
+.accordion{
+    border-bottom: 1px solid rgb(110, 110, 110,0.30);
+}
+
+.accordion .acc-btn{
+    position: relative;
+    display: block;
+    cursor: pointer;
+    width: 100%;
+    text-align: left;
+}
+
+.accordion .acc-btn h3{
+    font-size: 24px;
+    line-height: 36px;
+    font-weight: 500;
+    padding: 20px 0px;
+    padding-right: 80px;
+}
+
+.accordion .acc-btn .icon-box{
+    position: absolute;
+    top: 22px;
+    right: 0px;
+    width: 32px;
+    height: 32px;
+}
+
+.accordion .acc-btn .icon-box .open-icon{
+    position: absolute;
+    top: 0px;
+    right: 0px;
+}
+
+.accordion .acc-btn.active .icon-box .open-icon{
+    opacity: 0;
+}
+
+.accordion .acc-btn .icon-box .close-icon{
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    opacity: 0;
+}
+
+.accordion .acc-btn.active .icon-box .close-icon{
+    opacity: 1;
+}
+
+.accordion .acc-content{
+    padding-bottom: 20px;
+}
+
+.accordion .acc-content p{
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.accordion .acc-btn .light-icon{
+    position: absolute;
+    top: 22px;
+    right: 0px;
+    width: 32px;
+    height: 32px;
+    opacity: 0;
+}
+
+.accordion .acc-btn .light-icon .open-icon{
+    position: absolute;
+    top: 0px;
+    right: 0px;
+}
+
+.accordion .acc-btn.active .light-icon .open-icon{
+    opacity: 0;
+}
+
+.accordion .acc-btn .light-icon .close-icon{
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    opacity: 0;
+}
+
+.accordion .acc-btn.active .light-icon .close-icon{
+    opacity: 1;
+}

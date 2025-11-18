@@ -1,0 +1,348 @@
+
+.main-footer{
+  position: fixed;
+  background: #fff;
+  width: 100%;
+  overflow: hidden;
+  left: 0px;
+  bottom: 0px;
+  min-height: 410px;
+}
+
+.main-footer .widget-section{
+    border-bottom: 1px solid rgb(110, 110, 110, 0.30);
+}
+
+.main-footer .logo-widget p{
+    max-width: 365px;
+}
+
+.main-footer .widget-title{
+    position: relative;
+    display: block;
+    margin-bottom: 16px;
+}
+
+.main-footer .widget-title h3{
+    font-size: 20px;
+    line-height: 22px;
+    font-weight: 500;
+}
+
+.main-footer .links-widget .links-list li{
+    position: relative;
+    display: block;
+    font-size: 16px;
+    line-height: 24px;
+    margin-bottom: 10px;
+}
+
+.main-footer .links-widget .links-list li:last-child{
+    margin-bottom: 0px;
+}
+
+.main-footer .links-widget .links-list li a{
+    position: relative;
+    display: inline-block;
+    color: var(--text-color);
+}
+
+.main-footer .links-widget .links-list li a:hover{
+    color: var(--title-color);
+}
+
+.footer-bottom{
+    position: relative;
+    width: 100%;
+    padding: 25px 0px;
+}
+
+.footer-bottom p{
+    font-size: 18px;
+    line-height: 27px;
+}
+
+
+.footer-style-two{
+    position: fixed;
+    background: #fff;
+    width: 100%;
+    overflow: hidden;
+    left: 0px;
+    bottom: 0px;
+    min-height: 612px;
+}
+
+.footer-style-two .widget-section{
+    display: flex;
+    overflow: hidden;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 30px;
+}
+
+.footer-style-two .widget-title{
+    position: relative;
+    display: block;
+    margin-bottom: 43px;
+}
+
+.footer-style-two .widget-title h3{
+    font-size: 24px;
+    line-height: 29px;
+}
+
+.footer-style-two .links-widget .links-list li{
+    position: relative;
+    display: block;
+    margin-bottom: 20px;
+}
+
+.footer-style-two .links-widget .links-list li a{
+    position: relative;
+    display: inline-block;
+    font-size: 16px;
+    line-height: 24px;
+    color: var(--title-color);
+    opacity: 0.7;
+}
+
+.footer-style-two .links-widget .links-list li a:hover{
+    opacity: 1;
+    color: var(--theme-color);
+}
+
+.footer-style-two .footer-widget{
+    position: relative;
+}
+
+.footer-style-two .footer-widget .border-line{
+    position: absolute;
+    left: -30px;
+    top: 0px;
+    width: 1px;
+    height: 488px;
+    background-color: #6E6E6E;
+    opacity: 0.3;
+}
+
+.footer-style-two .subscribe-widget p{
+    margin-bottom: 60px;
+}
+
+.footer-style-two .subscribe-widget form .form-group{
+    position: relative;
+    margin-bottom: 10px;
+}
+
+.footer-style-two .subscribe-widget form .form-group:last-child{
+    margin-bottom: 0px;
+}
+
+.footer-style-two .subscribe-widget form .form-group input[type='email']{
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 62px;
+    border: 1px solid rgb(110, 110, 110, 0.30);
+    border-radius: 8px;
+    font-size: 18px;
+    color: rgb(35, 35, 35, 0.70);
+    padding: 10px 20px;
+    transition: all 500ms ease;
+}
+
+.footer-style-two .subscribe-widget form .form-group input:focus{
+    border-color: var(--theme-color);
+}
+
+.footer-style-two .subscribe-widget form .form-group .theme-btn{
+    width: 100%;
+}
+
+.footer-bottom-two{
+    position: relative;
+    display: block;
+    padding-bottom: 20px;
+}
+
+.footer-bottom-two .bottom-inner{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 12px;
+    border: 1px solid rgb(110, 110, 110, 0.30);
+    padding: 20px 30px;
+}
+
+.footer-bottom-two .bottom-inner .links-list{
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.footer-bottom-two .bottom-inner .links-list li a{
+    position: relative;
+    display: inline-block;
+    font-size: 16px;
+    line-height: 24px;
+    color: var(--title-color);
+}
+
+.footer-bottom-two .bottom-inner .links-list li a:hover{
+    color: var(--theme-color);
+}
+
+.footer-style-two .footer-logo-dark{
+    display: none;
+}
+
+
+.footer-style-three{
+    position: fixed;
+    background: var(--secondary-color) !important;
+    width: 100%;
+    overflow: hidden;
+    left: 0px;
+    bottom: 0px;
+    min-height: 481px;
+}
+
+.footer-style-three .logo-widget h2{
+    position: relative;
+    display: block;
+    font-size: 32px;
+    line-height: 38px;
+    color: #fff;
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+
+.footer-style-three .logo-widget form .form-group{
+    position: relative;
+    margin-bottom: 0px;
+}
+
+.footer-style-three .logo-widget form .form-group input[type='email']{
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 62px;
+    border: 1px solid rgb(255, 255, 255, 0.30);
+    border-radius: 8px;
+    font-size: 18px;
+    padding: 10px 30px;
+    padding-right: 80px;
+    color: rgb(255, 255, 255, 0.70);
+    transition: all 500ms ease;
+}
+
+.footer-style-three .logo-widget form .form-group input:focus{
+    border-color: var(--theme-color);
+}
+
+.footer-style-three .logo-widget form .form-group button[type='submit']{
+    position: absolute;
+    display: inline-block;
+    width: 52px;
+    height: 52px;
+    line-height: 52px;
+    top: 5px;
+    right: 5px;
+    border-radius: 5px;
+    font-size: 16px;
+    color: #fff;
+    text-align: center;
+    background-color: rgb(255, 255, 255, 0.10);
+    transition: all 500ms ease;
+}
+
+.footer-style-three .logo-widget form .form-group input:focus + button,
+.footer-style-three .logo-widget form .form-group button:hover{
+    background-color: var(--theme-color);
+}
+
+.footer-style-three .widget-title{
+    position: relative;
+    display: block;
+    margin-bottom: 40px;
+}
+
+.footer-style-three .widget-title h3{
+    font-size: 24px;
+    line-height: 29px;
+    color: #fff;
+}
+
+.footer-style-three .contact-widget .info-list li{
+    position: relative;
+    padding-left: 40px;
+    margin-bottom: 30px;
+}
+
+.footer-style-three .contact-widget .info-list li:last-child{
+    margin-bottom: 0px;
+}
+
+.footer-style-three .contact-widget .info-list li:last-child{
+    margin-bottom: 0px;
+}
+
+.footer-style-three .contact-widget .info-list li .icon{
+    position: absolute;
+    left: 0px;
+    top: 3px;
+}
+
+.footer-style-three .contact-widget .info-list li p{
+    color: rgb(255, 255, 255, 0.70);
+    margin-bottom: 4px;
+}
+
+.footer-style-three .contact-widget .info-list li a{
+    display: inline-block;
+    color: rgb(255, 255, 255, 0.70);
+}
+
+.footer-style-three .contact-widget .info-list li a:hover{
+    color: #fff;
+}
+
+.footer-style-three .links-widget .links-list li{
+    position: relative;
+    display: block;
+    margin-bottom: 20px;
+}
+
+.footer-style-three .links-widget .links-list li:last-child{
+    margin-bottom: 0px;
+}
+
+.footer-style-three .links-widget .links-list li a{
+    display: inline-block;
+    color: rgb(255, 255, 255, 0.70);
+}
+
+.footer-style-three .links-widget .links-list li a:hover{
+    color: #fff;
+}
+
+.footer-style-three .links-widget .social-links{
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.footer-style-three .links-widget .social-links li a{
+    position: relative;
+    display: inline-block;
+    font-size: 18px;
+    color: #fff;
+}
+
+.footer-style-three .links-widget .social-links li a:hover{
+    color: var(--theme-color);
+}

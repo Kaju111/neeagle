@@ -1,0 +1,32 @@
+
+.error-section{
+    padding-top: 300px;
+}
+
+.error-section .content-box h1{
+    font-size: 384px;
+    line-height: 461px;
+    margin-bottom: 20px;
+}
+
+.error-section .content-box h1 span,
+.error-section .content-box h2 span{
+    position: relative;
+    display: inline-block;
+    color: transparent;
+    -webkit-background-clip: text !important;
+    -webkit-text-fill-color: transparent;
+    background: linear-gradient(98.77deg, #232323 41.04%, #6E6E6E 73.86%);
+}
+
+.error-section .content-box h2{
+    font-size: 72px;
+    line-height: 92px;
+    margin-bottom: 16px;
+}
+
+.error-section .content-box p{
+    font-size: 20px;
+    line-height: 30px;
+    margin-bottom: 60px;
+}

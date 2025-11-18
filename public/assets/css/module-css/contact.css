@@ -1,0 +1,234 @@
+
+.contact-content{
+    position: relative;
+    display: block;
+    border: 1px solid rgb(110, 110, 110,0.3);
+    border-radius: 12px;
+    padding: 30px;
+}
+
+.contact-content h3{
+    display: block;
+    font-size: 24px;
+    line-height: 29px;
+    font-weight: 500;
+    margin-bottom: 24px;
+}
+
+.contact-content .form-group{
+    position: relative;
+    display: block;
+    margin-bottom: 20px;
+}
+
+.contact-content .form-group label{
+    position: relative;
+    display: block;
+    font-size: 16px;
+    line-height: 19px;
+    font-weight: 500;
+    color: var(--title-color);
+    margin-bottom: 8px;
+}
+
+.contact-content .form-group input[type='text'],
+.contact-content .form-group input[type='email'],
+.contact-content .form-group textarea{
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 48px;
+    border-radius: 12px;
+    border: 1px solid rgb(110, 110, 110,0.3);
+    font-size: 16px;
+    color: var(--text-color);
+    padding: 10px 20px;
+    transition: all 500ms ease;
+}
+
+.contact-content .form-group textarea{
+    height: 116px;
+    resize: none;
+}
+
+.contact-content .form-group input:focus,
+.contact-content .form-group textarea:focus{
+    border: 1px solid var(--theme-color);
+}
+
+.contact-content .message-btn button{
+    width: 100%;
+    justify-content: center;
+}
+
+.contact-content .select-option{
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.contact-content .check-box input {
+  display: none;
+}
+
+.contact-content .check-box label {
+  position: relative;
+  font-size: 16px;
+  line-height: 24px;
+  color: var(--text-color);
+  display: inline-block;
+  cursor: pointer;
+  padding: 11px 19px;
+  border-radius: 12px;
+  margin-bottom: 0px;
+  border: 1px solid rgb(110, 110, 110,0.3);
+  transition: all 500ms ease;
+}
+
+.contact-content .check-box input:checked + label {
+  color: #fff;
+  background-color: var(--theme-color);
+  border-color: var(--theme-color);
+}
+
+.contact-image .image{
+    position: relative;
+    display: block;
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.contact-image .image img{
+    width: 100%;
+    border-radius: 12px;
+    transition-property: all;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 500ms;
+}
+
+.contact-image .image:hover img{
+    transform: rotate(3deg) scaleX(1.25) scaleY(1.25);
+}
+
+.contact-style-two .form-inner{
+    position: relative;
+    display: block;
+}
+
+.contact-style-two .form-inner .form-group{
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.contact-style-two .form-inner .form-group:last-child{
+    margin-bottom: 0px;
+}
+
+.contact-style-two .form-inner .form-group input[type='text'],
+.contact-style-two .form-inner .form-group input[type='email'],
+.contact-style-two .form-inner .form-group textarea,
+.contact-style-two .form-inner .form-group input{
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 62px;
+    font-size: 18px;
+    color: rgb(110, 110, 110,0.7);
+    border: 1px solid rgb(110, 110, 110,0.3);
+    border-radius: 8px;
+    padding: 10px 20px !important;
+    transition: all 500ms ease;
+}
+
+.contact-style-two .form-inner .row{
+    --bs-gutter-x: 20px;
+}
+
+.contact-style-two .form-inner .form-group textarea{
+    height: 178px;
+    resize: none;
+    padding-top: 18px !important;
+}
+
+.contact-style-two .form-inner .form-group input:focus,
+.contact-style-two .form-inner .form-group textarea:focus{
+    border-color: var(--theme-color) !important;
+}
+
+.contact-style-two .form-inner .form-group .theme-btn{
+    width: 100%;
+}
+
+.contact-style-two .image-box .image{
+    position: relative;
+    display: block;
+    border-radius: 12px;
+}
+
+.contact-style-two .image-box .image img{
+    width: 100%;
+    border-radius: 12px;
+}
+
+.info-block-one .inner-box{
+    position: relative;
+    display: block;
+    border: 1px solid rgb(110, 110, 110,0.3);
+    border-radius: 12px;
+    padding: 30px;
+    margin-bottom: 30px;
+}
+
+.info-block-one .inner-box h3{
+    font-size: 32px;
+    line-height: 38px;
+    margin-bottom: 16px;
+}
+
+.info-block-one .inner-box p{
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    min-height: 48px;
+}
+
+.info-block-one .inner-box p a{
+    display: inline-block;
+    color: var(--text-color);
+}
+
+.info-block-one .inner-box p a:hover{
+    color: var(--theme-color);
+}
+
+.contact-map {
+  position: relative;
+  display: block;
+}
+
+.contact-map .map-container {
+  position: relative;
+  display: block;
+  border-radius: 12px;
+  overflow: hidden;
+  width: 100%;
+  height: 500px;
+}
+
+.contact-map .map-container iframe {
+  width: 100%;
+  height: 100%;
+  transition: all 500ms ease;
+}
+
+.contact-map .map-container:hover iframe {
+  transform: scale(1.02);
+}
+
+@media (max-width: 768px) {
+  .contact-map .map-container {
+    height: 400px;
+  }
+}

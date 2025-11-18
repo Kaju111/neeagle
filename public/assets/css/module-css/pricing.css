@@ -1,0 +1,112 @@
+.brochure-section {
+  text-align: center;
+  padding: 40px 0;
+
+  p {
+    margin-bottom: 24px;
+    font-size: 36px;
+    font-weight: 600;
+  }
+}
+
+.btn-box-centered {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 16px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.icon-box {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  background-color: #ffffff;
+  border-radius: 6px;
+  font-size: 18px;
+  font-weight: bold;
+  margin-right: 10px;
+  color: #000000;
+}
+
+.pricing-block-one .pricing-table {
+  position: relative;
+  display: block;
+  border: 1px solid rgba(110, 110, 110, 0.30);
+  border-radius: 12px;
+  margin-bottom: 30px;
+  padding: 30px;
+  transition-duration: 400ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.pricing-block-one .pricing-table:hover {
+  transform: scale(1.05);
+  box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.1);
+}
+
+
+
+.pricing-block-one .pricing-table .table-title{
+    padding-bottom: 30px;
+    border-bottom: 1px solid rgba(110, 110, 110, 0.30);
+}
+
+.pricing-block-one .pricing-table .table-title h3{
+    font-size: 32px;
+    line-height: 38px;
+    margin-bottom: 16px;
+}
+
+.pricing-block-one .pricing-table .table-header{
+    padding: 30px 0px;
+    border-bottom: 1px solid rgba(110, 110, 110, 0.30);
+    margin-bottom: 38px;
+}
+
+.pricing-block-one .pricing-table .table-header h2{
+    font-size: 64px;
+    line-height: 77px;
+    margin-bottom: 8px;
+}
+
+.pricing-block-one .pricing-table .table-header p{
+    margin-bottom: 32px;
+}
+
+.pricing-block-one .pricing-table .table-header .theme-btn{
+    width: 100%;
+}
+
+.pricing-block-one .pricing-table .feature-list li{
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    margin-bottom: 16px;
+}
+
+.pricing-block-one .pricing-table .feature-list li:last-child{
+    margin-bottom: 0px;
+}
+
+.pricing-block-one .pricing-table .feature-list li i{
+    position: relative;
+    display: inline-block;
+    width: 19px;
+    height: 19px;
+    line-height: 19px;
+    border: 1px solid rgba(110, 110, 110, 0.30);
+    border-radius: 6px;
+    color: var(--title-color);
+    text-align: center;
+    font-size: 10px;
+}
+
+.pricing-block-one .pricing-table .feature-list{
+    min-height: 224px;
+}
