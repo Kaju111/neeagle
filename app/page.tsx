@@ -2,7 +2,7 @@ import Layout from "../components/layout/Layout";
 import About from "../components/sections/home1/About";
 import Banner from "../components/sections/home1/Banner";
 import Contact from "../components/sections/home1/Contact";
-import Faq from "../components/sections/home1/Faq";
+// import Faq from "../components/sections/home1/Faq";
 import Portfolio from "../components/sections/home1/Portfolio";
 import Scroll_Text from "../components/sections/home1/Scroll_Text";
 import Service from "../components/sections/home1/Service";
