@@ -3,7 +3,7 @@ import Link from "next/link";
 import Layout from "../../components/layout/Layout";
 import Cta from "../../components/sections/home3/Cta";
 import Video from "../../components/sections/home1/Video";
-import Testimonial from "../../components/sections/home5/Testimonial";
+import Testimonial from "../../components/sections/home1/Testimonial";
 export default function Pricing_Page() {
   return (
     <div className="boxed_wrapper inner_page">

@@ -1,6 +1,5 @@
 "use client";
 
-import React, { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import Layout from "../../components/layout/Layout";
@@ -13,44 +12,6 @@ type FormData = {
 };
 
 export default function Contact_Page() {
-  const [form, setForm] = useState<FormData>({
-    name: "",
-    email: "",
-    message: "",
-  });
-
-  const [status, setStatus] = useState<string>("");
-
-  // ✅ Typed change handler
-  const handleChange = (
-    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
-  ) => {
-    setForm({ ...form, [e.target.name]: e.target.value });
-  };
-
-  // ✅ Typed submit handler
-  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
-    e.preventDefault();
-    setStatus("Sending...");
-
-    try {
-      const res = await fetch("/contact", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify(form),
-      });
-
-      if (res.ok) {
-        setStatus("✅ Message sent!");
-        setForm({ name: "", email: "", message: "" });
-      } else {
-        setStatus("❌ Failed to send");
-      }
-    } catch (err) {
-      setStatus("⚠️ Error sending message");
-    }
-  };
-
   return (
     <div className="boxed_wrapper inner_page">
       <Layout headerStyle={2} footerStyle={2}>

@@ -4,7 +4,6 @@ import BackToTop from "../elements/BackToTop";
 import DataBg from "../elements/DataBg";
 import Breadcrumb from "./Breadcrumb";
 import Footer1 from "./footer/Footer1";
-import Footer2 from "./footer/Footer2";
 import Footer3 from "./footer/Footer3";
 import Header1 from "./header/Header1";
 import Header2 from "./header/Header2";
@@ -39,8 +38,6 @@ export default function Layout({
   };
 
   // Popup
-  const [isPopup, setPopup] = useState(false);
-  const handlePopup = () => setPopup((p) => !p);
 
   // Sidebar
   const [isSidebar, setSidebar] = useState(false);
@@ -68,7 +65,6 @@ export default function Layout({
       scroll: isScrolled,
       isMobileMenu,
       handleMobileMenu,
-      handlePopup,
       isSidebar,
       handleSidebar,
     };
